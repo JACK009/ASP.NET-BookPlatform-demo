@@ -63,3 +63,4 @@
 #*.RTF   diff=astextplain
 
 AuthorAddInWeb/Scripts/* linguist-vendored
+AuthorAddInWeb/Content/* linguist-vendored
