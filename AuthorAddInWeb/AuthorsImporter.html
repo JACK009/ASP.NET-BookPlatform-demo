@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Author Importer</title>
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <!--<script src="Scripts/FabricUI/MessageBanner.js" type="text/javascript"></script>-->
+    <script src="Scripts/Office/1/office.js" type="text/javascript"></script>
+    <link href="fabric.components.min.css" rel="stylesheet" />
+    <link href="fabric.min.css" rel="stylesheet" />
+    <script src="fabric.min.js"></script>
+    <script src="AuthorsImporter.js" type="text/javascript"></script>
+    <link href="AuthorsImporter.css" rel="stylesheet" type="text/css" />
+  <!--  <link rel="stylesheet" href="Content/fabric.min.css" />
+    <link rel="stylesheet" href="Content/fabric.components.min.css"/>-->
+</head>
+<body>
+<div id="content-main">
+    <div class="ms-Grid">
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-md12">
+                <button type="button" class="ms-Button ms-Button--primary" id="clear-document">
+                    <div class="ms-Button-flexContainer">
+                        <span class="ms-Button-label">Clear document</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <hr/>
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-md12">
+                <div class="ms-TextField">
+                    <div class="ms-TextField-wrapper">
+                        <label for="author-name" class="ms-Label">
+                            Author Name
+                        </label>
+                        <div>
+                            <input type="text" id="author-name" value="" class="ms-TextField-field">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="ms-Button ms-Button--primary" id="search-authors">
+                    <div class="ms-Button-flexContainer">
+                        <span class="ms-Button-label">Find Author(s)</span>
+                    </div>
+                </button>
+                
+                <div class="authors">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ms-MessageBanner is-hidden" id="notification-popup">
+        <div class="ms-MessageBanner-content">
+            <div class="ms-MessageBanner-text">
+                <div class="ms-MessageBanner-clipper">
+                    <div class="ms-font-m-plus ms-fontWeight-semibold" id="notification-header"></div>
+                    <div class="ms-font-m ms-fontWeight-semilight" id="notification-body"></div>                
+                </div>
+            </div>
+            <button class="ms-MessageBanner-expand" style="display:none">
+                <i class="ms-Icon ms-Icon--ChevronDown"></i>
+            </button>
+            <div class="ms-MessageBanner-action"></div>
+        </div>
+        <button class="ms-MessageBanner-close">
+            <i class="ms-Icon ms-Icon--Clear"></i>
+        </button>
+    </div>
+</div>
+</body>
+</html>
